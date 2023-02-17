@@ -7,7 +7,7 @@
 #include <string.h>
 int main(void)
 {
-
+	/*intialization string*/
 	char str1[] = ("\"Programming is like building a multilingual puzzle");
 
 	puts(str1);
