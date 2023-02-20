@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -msam $CFILE
+gcc -S $CFILE
