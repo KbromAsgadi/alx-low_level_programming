@@ -4,7 +4,7 @@
 * print-alphabet_x10 - print alphabet 10 times
 * Return: void
 */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 	char c;
 	int i = 10;
@@ -12,7 +12,7 @@ void print_alphabet_x10(void);
 	while (i < 10)
 	{
 		c = 'a';
-		while (c <= z)
+		while (c <= 'z')
 		{
 			_putchar(c);
 			c++;
