@@ -10,12 +10,17 @@ void jack_bauer(void)
 	int h1;
 	int m2;
 	int m1;
+	int a = 9;
 
 	h2 = 0;
 	while (h2 <= 2)
 	{
+		if (h2 == 2)
+		{
+			a = 3;
+		}
 		h1 = 0;
-		while (h1 <= 3)
+		while (h1 <= a)
 		{
 			m2 = 0;
 			while (m2 <= 5)
@@ -28,9 +33,9 @@ void jack_bauer(void)
 					_putchar(':');
 					_putchar(m2 + '0');
 					_putchar(m1 + '0');
-					m1++;
 					_putchar(' ');
 					_putchar('\n');
+					m1++;
 				}
 				m2++;
 			}
