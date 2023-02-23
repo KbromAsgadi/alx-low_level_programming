@@ -1,9 +1,9 @@
 #include "main.h"
 /**
-* _isupper - upper letter
-* @c: chsr to check
+* _isdigit - check digit
+* @c: char to check
 ,*
-*Return: 0 or 2
+*Return: 0 or 1
 */
 int _isdigit(int c)
 {
