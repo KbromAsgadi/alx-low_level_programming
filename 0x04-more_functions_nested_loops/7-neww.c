@@ -6,23 +6,22 @@
 */
 void print_diagonal(int n)
 {
-	int b = 0;
-	int a = 0;
+	int b;
+	int a;
 
 	if (n > 0)
 	{
-		while (b < n)
+		for (b = 0; b < n; b++)
 		{
-			while (a < b)
+			for (a = 0; a < b; a++)
 			{
 				_putchar(' ');
-				a++;
 			}
 			a = 0;
-			b++;
 			_putchar('\\');
 			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 	else
 	{
