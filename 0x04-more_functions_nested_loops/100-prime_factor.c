@@ -9,17 +9,21 @@ int main(void)
 	long int i = 612852475143;
 	int prime;
 
-	for (prime = 2; prime <= sqrt(i); prime++)
+	while (prime < (i / 2))
 	{
-		/*int saved_prime;*/
-		if (i / prime == 0)
+		if (i % 2 == 0)
 		{
-			/*saved_prime = prime;*/
-			i = i / prime;
-			prime = 1;
-		/* printf("%ld\n", num);*/
+		i /= 2;
+		continue;
 		}
-		printf("%ld\n", i);
+	for (prime = 3; prime < (i / 2); prime += 2)
+	{
+		if ((i % prime) == 0)
+		{
+		i /= prime;
+		}
 	}
+	}
+	printf("%ld\n", i);
 	return (0);
 }
