@@ -16,8 +16,7 @@ int main(void)
 			i = i / prime;
 			prime = 1;
 		}
-
-		printf("%ld\n", i);
 	}
-	return (0);
+	printf("%ld\n", i);
+return (0);
 }
