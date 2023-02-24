@@ -11,12 +11,15 @@ int main(void)
 
 	for (prime = 2; prime <= sqrt(i); prime++)
 	{
+		/*int saved_prime;*/
 		if (i / prime == 0)
 		{
+			/*saved_prime = prime;*/
 			i = i / prime;
 			prime = 1;
+		/* printf("%ld\n", num);*/
 		}
+		printf("%ld\n", i);
 	}
-	printf("%ld\n", i);
-return (0);
+	return (0);
 }
