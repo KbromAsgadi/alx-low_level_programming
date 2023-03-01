@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_array - function that reverses the content of an array of integers
+ * reverse_array - function that reverses the content of an array of integers
  * @a: an array of integers
  * @n: the number of elements to revers
  * Return: nothing.
@@ -18,7 +18,7 @@ void reverse_array(int *a, int n)
 		{
 			printf(", ");
 		}
-		printf("%d", a[n-i]);
+		printf("%d", a[n - i]);
 		i++;
 	}
 	printf("\n");
