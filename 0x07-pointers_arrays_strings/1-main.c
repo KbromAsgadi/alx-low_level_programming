@@ -39,7 +39,7 @@ int main(void)
 	char buffer[98] = {0x00};
 
 	simple_print_buffer(buffer, 98);
-	_memcpy(buffer + 50, buffer2, 10);
+	_memcpy(buffer + 50, buffer, 10);
 	printf("-------------------------------------------------\n");
 	simple_print_buffer(buffer, 98);
 	return (0);
