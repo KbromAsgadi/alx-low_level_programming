@@ -8,15 +8,16 @@
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i = 0;
-	int *arr;
+	unsigned int i;
+	char *arr;
 
-	arr = malloc(sizeof(unsigned int) * size);
+	arr = malloc(nmemb * size);
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	if (arr == NULL)
 		return (NULL);
-	while (i < size)
+	i = 0;
+	while (i < (size * nmemb))
 	{
 		arr[i] = 0;
 		i++;
